@@ -1,6 +1,6 @@
 //Esse código é junto com o código em Carro.java;
 
-/*
+
 import java.util.Scanner;
 
 public class Main {
@@ -47,4 +47,4 @@ public class Main {
     System.out.println("A cor do carro é: " + carro1.cor);
   }
 }
-*/
+
