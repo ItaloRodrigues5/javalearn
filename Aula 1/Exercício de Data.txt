@@ -1,0 +1,7 @@
+Crie um projeto em Java que permita fazer agendamentos. Para isso crie uma classe Pessoa, com nome e telefone.
+
+Também crie uma classe Agenda com dia, mês e ano, também um atributo String com o motivo do agendamento.
+
+Crie um método valida data na classe Agenda que verifica se uma data é válida. 
+
+Crie no main as instâncias e utilize os métodos criados com Entrada de Dados e saída das informações.
