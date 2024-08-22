@@ -1,0 +1,18 @@
+Crie um programa em Java que represente um Sistema de Login.
+Deve possuir uma classe Login (com usuario e senha) e Pessoa (com nome e Login).
+Crie métodos para Login de validação de usuário e senha.
+No main, crie uma estrutura de repetição para verificar a "entrada" de uma "pessoa" a um sistema.
+Uma vez que a "pessoa" consiga entrar, ofereça opções nesse sistema (use a criatividade, mas não exagere).
+
+Lembre de possibilitar que a "pessoa" possa sair do "sistema" e encerre o programa.
+Lembre de criar as instâncias, usar While ou Do...While e Switch. Bem como chamar os métodos das classes :)
+
+Simbora!
+
+IMPORTANTE!!!
+
+Esse exercício trata do uso dos seguintes elementos no código Java:
+- do... while;
+- while;
+- if, else if, else;
+- Switch.
