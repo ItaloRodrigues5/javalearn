@@ -19,6 +19,23 @@ public class Main{
     System.out.print("Digite sua senha de cadastro: ");
     pessoa1.login.podeAcessarPass(scanner.nextLine());
 
+    /*
+    Poderia ter feito assim tbm para compreender e separar melhor as coisas:
+    
+    System.out.print("Digite seu nome: ");
+    String nome = scanner.nextLine();
+
+    System.out.print("Digite seu nome de usuário: ");
+    String usuario = scanner.nextLine();
+
+    System.out.print("Digite sua senha de cadastro: ");
+    String senha = scanner.nextLine();
+
+    pessoa1.nome = nome;
+    pessoa1.login.podeAcessarUser(usuario);
+    pessoa1.login.podeAcessarPass(senha);
+    */
+
     int op;
 
     do{
