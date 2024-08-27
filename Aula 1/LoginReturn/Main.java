@@ -6,6 +6,7 @@ public class Main{
         Scanner scanner = new Scanner(System.in);
 
         Pessoa pessoa1 = new Pessoa();
+        Login pessoa2 = new Login("Maria", "eula123456");
         pessoa1.criarLogin();
 
         System.out.println("Cadastro de Usuário\n");
@@ -82,7 +83,9 @@ public class Main{
 
         System.out.println("Abaixo é do getUsuario\n");
 
-        System.out.println(pessoa1.login.getUsuario());
+        System.out.println(pessoa1.login.getUsuario() + "\n");
+
+        System.out.println(pessoa2.toString());
 
     }
 }
