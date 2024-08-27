@@ -1,8 +1,8 @@
 public class Pessoa{
-  String nome;
-  Login login;
+    String nome;
+    Login login;
 
-  public void criarLogin(){
-    login = new Login();
-  }
+    public void criarLogin(){
+        login = new Login();
+    }
 }
