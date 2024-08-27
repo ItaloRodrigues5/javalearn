@@ -3,6 +3,6 @@ public class Pessoa{
     Login login;
 
     public void criarLogin(){
-        login = new Login();
+        login = new Login("João", "seila123");
     }
 }
