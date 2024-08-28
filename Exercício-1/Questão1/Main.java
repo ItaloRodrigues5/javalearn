@@ -12,10 +12,10 @@ public class Main{
 
         //System.out.println("A soma do número " + numero1 + " e " + numero2 + " = " + soma);
 
-        System.out.println("Digite 1 para Somar os números\n" +
-                "Digite 2 para subtrarir o primeiro número pelo segundo\n" +
-                "Digite 3 para multiplicar o segundo código\n" +
-                "Digite 4 para dividir");
+        System.out.println("===\nDigite 1 para Somar os números===\n" +
+                "===Digite 2 para subtrarir o primeiro número pelo segundo===\n" +
+                "===Digite 3 para multiplicar o segundo código===\n" +
+                "===Digite 4 para dividir===");
 
         int op = scanner.nextInt();
 
@@ -35,18 +35,14 @@ public class Main{
             case 4:
 
                 while(numero1 == 0) {
+                    System.out.println("Olha usuário. O divisor é 0. Logo é impossível dividir quaisquer números.");
+                    System.out.println("Digite um valor apropriado para a divisão");
 
-                System.out.println("Digite um valor apropriado para a divisão");
-                numero1 = scanner.nextInt();
-                    if (numero1 != 0){
-                        int divisao = numero2 / numero1;
-                        System.out.println("A divisão dos números " + numero1 + " e " + numero2 + " = " + divisao);
-
-                    }
-                    else{
-                        System.out.println("Olha usuário. O divisor é 0. Logo é impossível dividir quaisquer números.");
-                    }
+                    numero1 = scanner.nextInt();
                 }
+
+                double divisao = numero2 / numero1;
+                System.out.println("A divisão dos números " + numero1 + " e " + numero2 + " = " + divisao);
                 break;
         }
     }
