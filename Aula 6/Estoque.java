@@ -1,3 +1,4 @@
+```java
 package com.company;
 
 public class Estoque {
@@ -24,3 +25,4 @@ public class Estoque {
         return quantidade;
     }
 }
+```
