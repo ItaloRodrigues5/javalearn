@@ -1,19 +1,26 @@
+package com.company;
+
 public class Estoque {
-    int quantidade;
 
-    public Estoque(int quantidade){
+    private int quantidade;
+
+    public Estoque(int quantidade) {
         this.quantidade = quantidade;
     }
 
-    public int getQuantidade(){
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public void retiraQuantidade(){
+        quantidade -= 1;
+    }
+
+    public void adicionaQuantidade(){
+        quantidade += 1;
+    }
+
+    public int getQuantidade() {
         return quantidade;
-    }
-
-    public void setQuantidade(int quantidade){
-        this.quantidade = quantidade;
-    }
-
-    public String toString(){
-        return "Estoque: " + quantidade;
     }
 }
