@@ -1,0 +1,17 @@
+public class ContaPoupanca extends Conta{
+
+    private double taxa = 0.1;
+
+    public ContaPoupanca(int num, double saldo) {
+        super(num, saldo);
+    }
+
+    public double sacar(double valor){
+        super.saldo -= valor;
+        return super.saldo;
+    }
+
+    public void depositar(double valor){
+        super.saldo = valor + (valor * this.taxa);
+    }
+}
