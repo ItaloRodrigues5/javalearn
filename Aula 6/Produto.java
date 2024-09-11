@@ -1,56 +1,66 @@
-public class Produto {
-    private int id;
-    private Estoque estoque;
-    private String descricao;
-    private double preco;
+package com.company;
 
-    public Produto(int id, Estoque estoque, String descricao, double preco){
+public class Produto {
+
+    private int id;
+    private double preco;
+    private String descricao;
+    private Estoque estoque;
+
+    public Produto(int id, String descricao, double preco, int quantidade) {
         this.id = id;
-        this.estoque = new Estoque();
         this.descricao = descricao;
         this.preco = preco;
+        this.estoque = new Estoque(quantidade);
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public Estoque getEstoque(){
-        return estoque;
-    }
-
-    public String getDescricao(){
-        return descricao;
-    }
-
-    public double getPreco(){
-        return preco;
-    }
-
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
-    public void setEstoque(Estoque estoque){
-        this.estoque = estoque;
+    public double getPreco() {
+        return preco;
     }
 
-    public void setdescricao(String descricao){
-        this.descricao = descricao;
-    }
-
-    public void setPreco(){
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
+    public Estoque getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(Estoque estoque) {
+        this.estoque = estoque;
+    }
+
     public boolean disponibilidade(){
-        if (estoque.getQuantidade() < 1){
+        if(estoque.getQuantidade() < 1){
             return false;
-        }
-        else{
+        }else{
             return true;
         }
     }
 
+    public void retiraProduto(){
+        estoque.retiraQuantidade();
+    }
 
+    public void adicionaProduto(){
+        estoque.adicionaQuantidade();
+    }
+
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "id=" + id +
+                ", preco=" + preco +
+                ", estoque=" + estoque.getQuantidade() +
+                '}';
+    }
 }
