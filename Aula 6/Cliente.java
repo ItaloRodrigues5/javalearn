@@ -1,30 +1,36 @@
+package com.company;
+
 public class Cliente {
+
     private int cpf;
-    private String nome;
     private Carrinho carrinho;
 
-    public Cliente(int cpf, String nome, Carrinho carrinho){
+    public Cliente(int cpf) {
         this.cpf = cpf;
-        this.nome = nome;
     }
 
-    public void criaCarrinho(){
-        this.carrinho = new Carrinho();
-    }
-
-    public int getCPF(){
+    public int getCpf() {
         return cpf;
     }
 
-    public String getNome(){
-        return nome;
-    }
-
-    public void setCPF(int cpf){
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
-    public void setNome(String nome){
-        this.nome = nome;
+    public Carrinho getCarrinho() {
+        return carrinho;
     }
+
+    public void criaCarrinho() {
+        this.carrinho = new Carrinho();
+    }
+
+    public void escolheProduto(Loja loja, Produto produto){
+        carrinho.recebeProduto(loja,produto);
+    }
+
+    public void retiraProduto(Loja loja, Produto produto){
+        carrinho.retiraProduto(loja,produto);
+    }
+
 }
