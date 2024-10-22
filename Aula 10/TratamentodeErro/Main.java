@@ -1,5 +1,7 @@
 public class Main{
   public static void main(String[] args){
+    //JUnit - Testes unitários de Java
+    
     //Teste de erro em execução;
 
         int a[] = new int[2];
