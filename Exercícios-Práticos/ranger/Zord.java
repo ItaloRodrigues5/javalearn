@@ -1,9 +1,10 @@
-import java.util.ArrayList;
-
 public interface Zord {
-    ArrayList<Zord> zords = new ArrayList<>();
+    
+    abstract public void pilotar();
 
-    public void ataque(){
-        System.out.println(zords + "Atacar!!!");
-    }
+    abstract public void atirar();
+
+    abstract public void voar();
+
+    abstract public void correr();
 }

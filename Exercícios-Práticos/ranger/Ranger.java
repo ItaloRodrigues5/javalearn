@@ -18,7 +18,7 @@ public class Ranger {
     }
 
     public void MorfarArmadura(){
-        System.out.println("Armadura avisada");
+        System.out.println("Armadura ativada");
     }
 
     public void MorfarArmaArmadura(){
