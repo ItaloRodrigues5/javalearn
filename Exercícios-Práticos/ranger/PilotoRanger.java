@@ -1,5 +1,5 @@
 public class PilotoRanger {
-    private Ranger ranger;
+    protected Ranger ranger;
 
     public PilotoRanger(Ranger ranger){
         this.ranger = ranger;

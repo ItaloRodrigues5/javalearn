@@ -46,8 +46,16 @@ public class Main {
         //Sem o getNome(), ele passa apenas a referência do espaço de memória onde tá armazenado o valor do atributo.
         System.out.println("Nome do pilotoX: " + pr.getRanger().getNome());
 
-        mz.listarZords();
+        System.out.println();
 
+        mz.adicionarZord(leaozord);
+        mz.adicionarZord(tigrezord);
+        mz.adicionarZord(tubaraozord);
+
+        mz.listarZords();
+        
+        System.out.println();
+        
         mz.atacar();
 
     }
