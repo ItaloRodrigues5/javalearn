@@ -1,3 +1,5 @@
+import javax.lang.model.type.NullType;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class Main {
         Ranger r1 = new RangerAzul("xuxa", "Simples", "espada");
         Ranger r2 = new RangerVermelho("sebastão", "fortificada", "espadão");
         Ranger r3 = new RangerPreto("Shadow", "Sem", "Pistola");
-        //Ranger r4 = new Ranger("Irineu"); Não possui identificação de cor do Power Ranger
+        //Ranger r4 = new RangerPreto("Irineu", "xuxa", "lança"); //Não possui identificação de cor do Power Ranger
 
         //Criação da instância de PilotoRanger
         PilotoRanger pr = new PilotoRanger(r3);
@@ -70,6 +72,19 @@ public class Main {
         System.out.println();
         
         mz.atacar();
+
+
+        try {
+            if(pr.equals(r1) || pr.equals(r2) || pr.equals(r3)){
+                System.out.println("É Pilotos Ranger");
+            }
+        } catch (NullPointerException nulle) {
+            System.out.println("A variável é vazia (null) e não possui identificação");
+        }
+
+        finally{
+            System.out.println("Testando...");
+        }
 
     }
 }
