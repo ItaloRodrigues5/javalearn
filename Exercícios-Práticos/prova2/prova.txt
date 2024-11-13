@@ -1,0 +1,13 @@
+- Um enum chamado TipoEvento com valores como CASAMENTO, CONFERENCIA, ANIVERSARIO, FORMATURA. OK
+
+- Uma interface chamada Organizavel com um método organizarEvento(). OK
+
+- Uma classe abstrata chamada Evento que implementa Organizavel, com um método abstrato realizarEvento() e uma variável estática. A variável estática deve acompanhar o total de participantes em todos os eventos. A classe deve ter um atributo do tipo TipoEvento. OK
+
+- Duas classes concretas que herdam da classe Evento, por exemplo Casamento e Conferencia. Estas classes devem implementar o método abstrato realizarEvento() da classe Evento. OK
+
+- Um método complexo chamado calcularCustoEvento() na classe Evento que leva em consideração vários fatores como número de participantes, duração do evento, tipo de evento, e serviços adicionais. Este método deve usar estruturas condicionais, loops e cálculos matemáticos para determinar o custo final do evento. OK
+
+- Um método main em uma classe separada chamada CasaDeEventos. Esse método deve criar instâncias das classes concretas que você criou e usar um loop para simular vários eventos chamando o método realizarEvento(). Demonstre o polimorfismo utilizando uma lista de Organizavel para armazenar diferentes tipos de eventos. O método main também deve exibir o total de participantes em todos os eventos e chamar o método calcularCustoEvento() para cada evento.
+
+- Em seu método main, inclua um bloco try-catch para lidar com possíveis exceções que possam ocorrer durante a execução do seu programa, como por exemplo, uma exceção personalizada LimiteDeCapacidadeExcedidoException. OK

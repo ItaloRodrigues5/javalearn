@@ -1,0 +1,4 @@
+
+public enum TipoEvento {
+    CASAMENTO, CONFERENCIA, ANIVERSARIO, FORMATURA
+}
