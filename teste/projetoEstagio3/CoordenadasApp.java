@@ -16,6 +16,9 @@ public class CoordenadasApp {
                     // Obtém as coordenadas do usuário
                     String xInput = xField.getText();
                     String yInput = yField.getText();
+
+                    // JFrame.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("javalearn\\teste\\projetoEstagio3\\Dw_0zPdVsAA6GsK.jpg")))));
+                    // JFrame.setIconImage(new ImageIcon("javalearn\\teste\\projetoEstagio3\\Dw_0zPdVsAA6GsK.jpg"));
                     
                     // Converte as entradas para números
                     double x = Double.parseDouble(xInput);
